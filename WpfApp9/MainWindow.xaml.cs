@@ -20,7 +20,7 @@ namespace WpfApp9
     /// </summary>
     public partial class MainWindow : Window
     {
-        Entities entities = new Entities();
+        Entities1 entities = new Entities1();
         public MainWindow()
         {
             InitializeComponent();
@@ -35,7 +35,7 @@ namespace WpfApp9
             {
                 string login = txtUsername.Text;
                 string password = txtPassword.Password;
-                using (var entities = new Entities())
+                using (var entities = new Entities1())
                 {
                     bool userExists = entities.Роли.Any(u => u.username == login);
                     if (!userExists)

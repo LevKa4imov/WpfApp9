@@ -19,7 +19,7 @@ namespace WpfApp9
     /// </summary>
     public partial class Window4 : Window
     {
-        Entities entities = new Entities();
+        Entities1 entities = new Entities1();
         public Window4()
         {
             InitializeComponent();
@@ -95,7 +95,7 @@ namespace WpfApp9
                     ListSotrudnik1.Items.Remove(delete_сотрудники);
                     TextBoxSotrudnik.Clear();
 
-                    MessageBox.Show("Разработчик успешно удален");
+                    MessageBox.Show("Сотрудник успешно удален");
                 }
                 else
 {

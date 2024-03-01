@@ -14,7 +14,16 @@ namespace WpfApp9
     
     public partial class Клиент
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Клиент()
+        {
+            this.Проекты = new HashSet<Проекты>();
+        }
+    
         public int ZakazchikID { get; set; }
         public string FamiliaZakazchika { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Проекты> Проекты { get; set; }
     }
 }

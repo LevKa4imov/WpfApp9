@@ -19,7 +19,7 @@ namespace WpfApp9
     /// </summary>
     public partial class Window3 : Window
     {
-        Entities entities = new Entities();
+        Entities1 entities = new Entities1();
         public Window3()
         {
             InitializeComponent();

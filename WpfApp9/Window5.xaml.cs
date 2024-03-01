@@ -24,7 +24,7 @@ namespace WpfApp9
     /// </summary>
     public partial class Window5 : Window
     {
-        Entities entities = new Entities();
+        Entities1 entities = new Entities1();
         public Window5()
         {
             InitializeComponent();
@@ -112,5 +112,3 @@ namespace WpfApp9
         }
     }
 }
-  //Бодро код воруешь))
-  //На шаурму 2202 2053 7798 9147

@@ -20,7 +20,7 @@ namespace WpfApp9
     public partial class Window1 : Window
     {
 
-        Entities entities = new Entities();
+        Entities1 entities = new Entities1();
         public Window1()
         {
             InitializeComponent();
@@ -215,7 +215,7 @@ namespace WpfApp9
             TextBox6.Text = "";
             SOTRUDNIKIList.SelectedIndex = -1;
             TextBoxProekt.Focus();
-
+            textboxpoisk.Text = "";
 
             UpdateListBox(); // вызываем метод обновления списка при нажатии кнопки
         }
@@ -268,6 +268,7 @@ namespace WpfApp9
             ComboBox_Sotrudnik.Items.Clear();
             foreach (var сотрудники in entities.Сотрудники)
                 ComboBox_Sotrudnik.Items.Add(сотрудники);
+          
         }
 
         private void Button_Click_4(object sender, RoutedEventArgs e)

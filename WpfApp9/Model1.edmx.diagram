@@ -4,12 +4,15 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="cb2e8863a4e8438b846af57a2844f4a1" Name="Diagram1">
-        <EntityTypeShape EntityType="Model.Клиент" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="Model.Проекты" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="Model.Роли" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="Model.Сотрудники" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="Model.Специализация" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
+      <Diagram DiagramId="797ff866c805463fbb8f90426e054af4" Name="Diagram1" ZoomLevel="64">
+        <EntityTypeShape EntityType="Model.Клиент" Width="1.5" PointX="1.125" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Проекты" Width="1.5" PointX="5.25" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Роли" Width="1.5" PointX="8.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Сотрудники" Width="1.5" PointX="1.125" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Специализация" Width="1.5" PointX="8.875" PointY="6.25" IsExpanded="true" />
+        <AssociationConnector Association="Model.FK_Проекты_ToTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Проекты_ToTable_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Проекты_ToTable_2" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

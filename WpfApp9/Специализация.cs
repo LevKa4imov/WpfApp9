@@ -14,7 +14,16 @@ namespace WpfApp9
     
     public partial class Специализация
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Специализация()
+        {
+            this.Проекты = new HashSet<Проекты>();
+        }
+    
         public int SpezializaziaID { get; set; }
         public string SpezializaziaSotrud { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Проекты> Проекты { get; set; }
     }
 }

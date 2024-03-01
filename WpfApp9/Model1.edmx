@@ -48,12 +48,60 @@
           <Property Name="SpezializaziaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="SpezializaziaSotrud" Type="nvarchar" MaxLength="50" />
         </EntityType>
+        <Association Name="FK_Проекты_ToTable">
+          <End Role="Клиент" Type="Self.Клиент" Multiplicity="0..1" />
+          <End Role="Проекты" Type="Self.Проекты" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Клиент">
+              <PropertyRef Name="ZakazchikID" />
+            </Principal>
+            <Dependent Role="Проекты">
+              <PropertyRef Name="ZakazchikID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Проекты_ToTable_1">
+          <End Role="Сотрудники" Type="Self.Сотрудники" Multiplicity="0..1" />
+          <End Role="Проекты" Type="Self.Проекты" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Сотрудники">
+              <PropertyRef Name="SorudnikId" />
+            </Principal>
+            <Dependent Role="Проекты">
+              <PropertyRef Name="SotrudnikId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Проекты_ToTable_2">
+          <End Role="Специализация" Type="Self.Специализация" Multiplicity="0..1" />
+          <End Role="Проекты" Type="Self.Проекты" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Специализация">
+              <PropertyRef Name="SpezializaziaID" />
+            </Principal>
+            <Dependent Role="Проекты">
+              <PropertyRef Name="SpezializaziaID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <EntityContainer Name="Хранилище ModelContainer">
           <EntitySet Name="Клиент" EntityType="Self.Клиент" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Проекты" EntityType="Self.Проекты" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Роли" EntityType="Self.Роли" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Сотрудники" EntityType="Self.Сотрудники" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Специализация" EntityType="Self.Специализация" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Проекты_ToTable" Association="Self.FK_Проекты_ToTable">
+            <End Role="Клиент" EntitySet="Клиент" />
+            <End Role="Проекты" EntitySet="Проекты" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Проекты_ToTable_1" Association="Self.FK_Проекты_ToTable_1">
+            <End Role="Сотрудники" EntitySet="Сотрудники" />
+            <End Role="Проекты" EntitySet="Проекты" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Проекты_ToTable_2" Association="Self.FK_Проекты_ToTable_2">
+            <End Role="Специализация" EntitySet="Специализация" />
+            <End Role="Проекты" EntitySet="Проекты" />
+          </AssociationSet>
         </EntityContainer>
       </Schema>
     </edmx:StorageModels>
@@ -66,6 +114,7 @@
           </Key>
           <Property Name="ZakazchikID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="FamiliaZakazchika" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Проекты" Relationship="Self.FK_Проекты_ToTable" FromRole="Клиент" ToRole="Проекты" />
         </EntityType>
         <EntityType Name="Проекты">
           <Key>
@@ -79,6 +128,9 @@
           <Property Name="ZakazchikID" Type="Int32" />
           <Property Name="SpezializaziaID" Type="Int32" />
           <Property Name="cena" Type="Int32" />
+          <NavigationProperty Name="Клиент" Relationship="Self.FK_Проекты_ToTable" FromRole="Проекты" ToRole="Клиент" />
+          <NavigationProperty Name="Сотрудники" Relationship="Self.FK_Проекты_ToTable_1" FromRole="Проекты" ToRole="Сотрудники" />
+          <NavigationProperty Name="Специализация" Relationship="Self.FK_Проекты_ToTable_2" FromRole="Проекты" ToRole="Специализация" />
         </EntityType>
         <EntityType Name="Роли">
           <Key>
@@ -95,6 +147,7 @@
           </Key>
           <Property Name="SorudnikId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Familia" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Проекты" Relationship="Self.FK_Проекты_ToTable_1" FromRole="Сотрудники" ToRole="Проекты" />
         </EntityType>
         <EntityType Name="Специализация">
           <Key>
@@ -102,20 +155,69 @@
           </Key>
           <Property Name="SpezializaziaID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="SpezializaziaSotrud" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Проекты" Relationship="Self.FK_Проекты_ToTable_2" FromRole="Специализация" ToRole="Проекты" />
         </EntityType>
-        <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+        <Association Name="FK_Проекты_ToTable">
+          <End Role="Клиент" Type="Self.Клиент" Multiplicity="0..1" />
+          <End Role="Проекты" Type="Self.Проекты" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Клиент">
+              <PropertyRef Name="ZakazchikID" />
+            </Principal>
+            <Dependent Role="Проекты">
+              <PropertyRef Name="ZakazchikID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Проекты_ToTable_1">
+          <End Role="Сотрудники" Type="Self.Сотрудники" Multiplicity="0..1" />
+          <End Role="Проекты" Type="Self.Проекты" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Сотрудники">
+              <PropertyRef Name="SorudnikId" />
+            </Principal>
+            <Dependent Role="Проекты">
+              <PropertyRef Name="SotrudnikId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Проекты_ToTable_2">
+          <End Role="Специализация" Type="Self.Специализация" Multiplicity="0..1" />
+          <End Role="Проекты" Type="Self.Проекты" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Специализация">
+              <PropertyRef Name="SpezializaziaID" />
+            </Principal>
+            <Dependent Role="Проекты">
+              <PropertyRef Name="SpezializaziaID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Entities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Клиент" EntityType="Self.Клиент" />
           <EntitySet Name="Проекты" EntityType="Self.Проекты" />
           <EntitySet Name="Роли" EntityType="Self.Роли" />
           <EntitySet Name="Сотрудники" EntityType="Self.Сотрудники" />
           <EntitySet Name="Специализация" EntityType="Self.Специализация" />
+          <AssociationSet Name="FK_Проекты_ToTable" Association="Self.FK_Проекты_ToTable">
+            <End Role="Клиент" EntitySet="Клиент" />
+            <End Role="Проекты" EntitySet="Проекты" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Проекты_ToTable_1" Association="Self.FK_Проекты_ToTable_1">
+            <End Role="Сотрудники" EntitySet="Сотрудники" />
+            <End Role="Проекты" EntitySet="Проекты" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Проекты_ToTable_2" Association="Self.FK_Проекты_ToTable_2">
+            <End Role="Специализация" EntitySet="Специализация" />
+            <End Role="Проекты" EntitySet="Проекты" />
+          </AssociationSet>
         </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="Хранилище ModelContainer" CdmEntityContainer="Entities">
+        <EntityContainerMapping StorageEntityContainer="Хранилище ModelContainer" CdmEntityContainer="Entities1">
           <EntitySetMapping Name="Клиент">
             <EntityTypeMapping TypeName="Model.Клиент">
               <MappingFragment StoreEntitySet="Клиент">

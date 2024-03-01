@@ -22,5 +22,9 @@ namespace WpfApp9
         public Nullable<int> ZakazchikID { get; set; }
         public Nullable<int> SpezializaziaID { get; set; }
         public Nullable<int> cena { get; set; }
+    
+        public virtual Клиент Клиент { get; set; }
+        public virtual Сотрудники Сотрудники { get; set; }
+        public virtual Специализация Специализация { get; set; }
     }
 }
