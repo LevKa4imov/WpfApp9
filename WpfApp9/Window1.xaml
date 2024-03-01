@@ -18,38 +18,38 @@
             </LinearGradientBrush>
         </Grid.Background>
 
-        <DatePicker x:Name="TextBox6" Margin="708,511,208,107" Height="57" Background="White" RenderTransformOrigin="0.08,0.993" FontSize="24" />
-        <ListBox x:Name="SOTRUDNIKIList" HorizontalAlignment="Left" Height="189" VerticalAlignment="Top" Width="540" Margin="10,501,0,0" RenderTransformOrigin="0.71,0.725" SelectionChanged="ListBox_SelectionChanged" Background="White" FontSize="24" FontFamily="Verdana"/>
-        <ComboBox x:Name="ComboBox_Sotrudnik" HorizontalAlignment="Left" Margin="837,267,0,0" VerticalAlignment="Top" Width="379" RenderTransformOrigin="0.276,1.327" Height="45" SelectionChanged="ComboBox_proekt_SelectionChanged" FontSize="24"/>
-        <TextBox x:Name="TextBoxProekt" HorizontalAlignment="Left" Height="46" Margin="570,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="235" RenderTransformOrigin="0.154,0.716" TextChanged="TextBoxFamilia_TextChanged" FontSize="24" />
-        <Label Content="Названия проекта" HorizontalAlignment="Left" Margin="612,114,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.476,-0.912" FontSize="24" FontFamily="Verdana"/>
-        <ComboBox x:Name="ComboBox_Doljnost" HorizontalAlignment="Left" Margin="837,165,0,0" VerticalAlignment="Top" Width="379" SelectionChanged="ComboBox_Nationality_SelectionChanged" Height="46" FontSize="24"  />
-        <Image x:Name="cloth_image" HorizontalAlignment="Left" Height="267" Margin="10,100,0,0" VerticalAlignment="Top" Width="283" RenderTransformOrigin="0.05,0.75"/>
-        <TextBox x:Name="textboxpoisk" HorizontalAlignment="Left" Height="46" Margin="570,373,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="246" TextChanged="textboxpoisk_TextChanged" FontSize="24" />
-        <TextBox x:Name="TextBoxCena" HorizontalAlignment="Left" Margin="570,273,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="246" RenderTransformOrigin="0.375,-0.555" Height="39" TextChanged="TextBoxVozrast_TextChanged" FontSize="24"/>
-        <Label Content="Стоимость" HorizontalAlignment="Left" Margin="632,230,0,0" VerticalAlignment="Top" Height="36" Width="143" FontFamily="Verdana" FontSize="24" RenderTransformOrigin="0.123,0.365"/>
-        <ComboBox x:Name="ComboBox_rabotaklient" HorizontalAlignment="Left" Margin="837,373,0,0" VerticalAlignment="Top" Width="379" RenderTransformOrigin="0.276,1.327" Height="45" SelectionChanged="ComboBox_rabotaklient_SelectionChanged" FontSize="24"/>
-        <Label Content="Разработчик" HorizontalAlignment="Left" Margin="900,112,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.685,1.194" Height="48" Width="174" FontSize="24" FontFamily="Verdana"/>
-        <Label Content="Сотрудник" HorizontalAlignment="Left" Margin="900,216,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.685,1.194" Height="46" Width="168" FontSize="24" FontFamily="Verdana"/>
-        <Label Content="Заказчик&#xA;" HorizontalAlignment="Left" Margin="900,321,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.685,1.194" Height="43" Width="185" FontSize="24" FontFamily="Verdana"/>
-        <Button Content="Сохранить" HorizontalAlignment="Left" Margin="318,10,0,0" VerticalAlignment="Top" Width="232" RenderTransformOrigin="0.853,0.562" Click="Button_Click" FontSize="24" Height="40" FontFamily="Verdana"/>
-        <Button x:Name="___Button_Delete_ochistka" Content="Удалить" HorizontalAlignment="Left" Margin="319,53,0,0" VerticalAlignment="Top" Width="231" RenderTransformOrigin="1.04,0.875" Click="Button_Click_1" FontSize="24" Height="42" FontFamily="Verdana"/>
+        <DatePicker x:Name="TextBox6" Margin="485,455,497,191" Height="58" Background="White" RenderTransformOrigin="0.08,0.993" FontSize="24" />
+        <ListBox x:Name="SOTRUDNIKIList" HorizontalAlignment="Left" Height="235" VerticalAlignment="Top" Width="408" Margin="10,455,0,0" RenderTransformOrigin="0.71,0.725" SelectionChanged="ListBox_SelectionChanged" Background="White" FontSize="24" FontFamily="Verdana"/>
+        <ComboBox x:Name="ComboBox_Sotrudnik" HorizontalAlignment="Left" Margin="837,233,0,0" VerticalAlignment="Top" Width="379" RenderTransformOrigin="0.276,1.327" Height="45" SelectionChanged="ComboBox_proekt_SelectionChanged" FontSize="24"/>
+        <TextBox x:Name="TextBoxProekt" HorizontalAlignment="Left" Height="46" Margin="485,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="320" RenderTransformOrigin="0.154,0.716" TextChanged="TextBoxFamilia_TextChanged" FontSize="24" />
+        <Label Content="Названия проекта" HorizontalAlignment="Left" Margin="581,72,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.476,-0.912" FontSize="24" FontFamily="Verdana"/>
+        <ComboBox x:Name="ComboBox_Doljnost" HorizontalAlignment="Left" Margin="837,109,0,0" VerticalAlignment="Top" Width="379" SelectionChanged="ComboBox_Nationality_SelectionChanged" Height="46" FontSize="24"  />
+        <Image x:Name="cloth_image" HorizontalAlignment="Left" Height="298" Margin="10,82,0,0" VerticalAlignment="Top" Width="408" RenderTransformOrigin="0.05,0.75"/>
+        <TextBox x:Name="textboxpoisk" HorizontalAlignment="Left" Height="46" Margin="485,334,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="331" TextChanged="textboxpoisk_TextChanged" FontSize="24" />
+        <TextBox x:Name="TextBoxCena" HorizontalAlignment="Left" Margin="485,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="331" RenderTransformOrigin="0.375,-0.555" Height="39" TextChanged="TextBoxVozrast_TextChanged" FontSize="24"/>
+        <Label Content="Стоимость" HorizontalAlignment="Left" Margin="581,188,0,0" VerticalAlignment="Top" Height="36" Width="143" FontFamily="Verdana" FontSize="24" RenderTransformOrigin="0.123,0.365"/>
+        <ComboBox x:Name="ComboBox_rabotaklient" HorizontalAlignment="Left" Margin="837,335,0,0" VerticalAlignment="Top" Width="379" RenderTransformOrigin="0.276,1.327" Height="45" SelectionChanged="ComboBox_rabotaklient_SelectionChanged" FontSize="24"/>
+        <Label Content="Разработчик" HorizontalAlignment="Left" Margin="900,72,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.685,1.194" Height="48" Width="174" FontSize="24" FontFamily="Verdana"/>
+        <Label Content="Сотрудник" HorizontalAlignment="Left" Margin="900,178,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.685,1.194" Height="46" Width="168" FontSize="24" FontFamily="Verdana"/>
+        <Label Content="Заказчик&#xA;" HorizontalAlignment="Left" Margin="900,293,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.685,1.194" Height="43" Width="185" FontSize="24" FontFamily="Verdana"/>
+        <Button Content="Применить" HorizontalAlignment="Left" Margin="764,501,0,0" VerticalAlignment="Top" Width="213" RenderTransformOrigin="0.853,0.562" Click="Button_Click" FontSize="24" Height="45" FontFamily="Verdana"/>
+        <Button x:Name="___Button_Delete_ochistka" Content="Удалить" HorizontalAlignment="Left" Margin="985,503,0,0" VerticalAlignment="Top" Width="215" RenderTransformOrigin="1.04,0.875" Click="Button_Click_1" FontSize="24" Height="43" FontFamily="Verdana"/>
 
 
         <Button Margin="1144,30,26,618" Style="{StaticResource MaterialDesignFloatingActionButton}" Background="{x:Null}"
             ToolTip="Close" x:Name="btnExit" Click="btnExit_Click" Height="Auto" RenderTransformOrigin="6.893,1.054" Width="Auto">
             <materialDesign:PackIcon Kind="Close" Foreground="Black" Width="30" Height="30" />
         </Button>
-        <Button x:Name="Dob_Foto" Content="Добавить фото" HorizontalAlignment="Left" Margin="318,191,0,0" VerticalAlignment="Top" Width="232" Click="Dob_Foto_Click" FontSize="24" Height="41" FontFamily="Verdana"/>
-        <Button x:Name="Ohistka_button" Content="Очистка" HorizontalAlignment="Left" Margin="318,100,0,0" VerticalAlignment="Top" Width="232" RenderTransformOrigin="2.8,-8" Click="Ohistka_button_Click" FontSize="24" Height="43" FontFamily="Verdana"/>
-        <Label Content="Сроки" HorizontalAlignment="Left" Margin="798,448,0,169" VerticalAlignment="Center" Height="58" Width="97" FontFamily="Verdana" FontSize="24" RenderTransformOrigin="0.123,0.365"/>
-        <Label Content="Поиск" HorizontalAlignment="Left" Margin="632,321,0,318" VerticalAlignment="Center" Height="36" Width="110" FontFamily="Verdana" FontSize="24" RenderTransformOrigin="0.123,0.365"/>
-        <Button Content="Разработчик" HorizontalAlignment="Left" Margin="318,237,0,0" VerticalAlignment="Top" Width="232" Height="41" FontSize="24" Click="Button_Click_5" FontFamily="Verdana"/>
-        <Button Content="Заказчик" HorizontalAlignment="Left" Margin="318,328,0,0" VerticalAlignment="Top" Width="232" RenderTransformOrigin="-0.373,-0.062" Height="39" FontSize="24" Click="Button_Click_4" FontFamily="Verdana"/>
-        <Button Content="Сотрудники" HorizontalAlignment="Left" Margin="318,282,0,0" VerticalAlignment="Top" Width="232" RenderTransformOrigin="-0.373,-0.062" Height="41" FontSize="24" Click="Button_Click_3" FontFamily="Verdana"/>
-        <Button x:Name="Button_Click_Tab" Content="Таблица" HorizontalAlignment="Left" Margin="318,372,0,0" VerticalAlignment="Top" Width="231" RenderTransformOrigin="-0.347,-0.125" Height="39" FontSize="24" FontFamily="Verdana" Click="Button_Click_6"/>
-        <Label Content="О проекте" HorizontalAlignment="Left" Margin="0,422,0,204" VerticalAlignment="Center" Height="49" Width="549" FontFamily="Verdana" FontSize="36" RenderTransformOrigin="0.123,0.365"/>
-        <Button x:Name="Button_Click_Poisk2" Content="Поиск" HorizontalAlignment="Left" Margin="318,148,0,0" VerticalAlignment="Top" Width="231" RenderTransformOrigin="-3.173,-2.875" Height="38" FontSize="24" FontFamily="Verdana" Click="Button_Click_Poisk2_Click"/>
+        <Button x:Name="Dob_Foto" Content="Фото" HorizontalAlignment="Left" Margin="985,551,0,0" VerticalAlignment="Top" Width="215" Click="Dob_Foto_Click" FontSize="24" Height="47" FontFamily="Verdana"/>
+        <Button x:Name="Ohistka_button" Content="Очистка" HorizontalAlignment="Left" Margin="764,551,0,0" VerticalAlignment="Top" Width="213" RenderTransformOrigin="2.8,-8" Click="Ohistka_button_Click" FontSize="24" Height="47" FontFamily="Verdana"/>
+        <Label Content="Сроки" HorizontalAlignment="Left" Margin="581,392,0,254" VerticalAlignment="Center" Height="58" Width="97" FontFamily="Verdana" FontSize="24" RenderTransformOrigin="0.123,0.365"/>
+        <Label Content="Поиск" HorizontalAlignment="Left" Margin="581,293,0,375" VerticalAlignment="Center" Height="36" Width="110" FontFamily="Verdana" FontSize="24" RenderTransformOrigin="0.123,0.365"/>
+        <Button Content="Разработчик" HorizontalAlignment="Left" Margin="764,455,0,0" VerticalAlignment="Top" Width="213" Height="41" FontSize="24" Click="Button_Click_5" FontFamily="Verdana" RenderTransformOrigin="1.226,5.507"/>
+        <Button Content="Заказчик" HorizontalAlignment="Left" Margin="764,397,0,0" VerticalAlignment="Top" Width="436" RenderTransformOrigin="-0.373,-0.062" Height="49" FontSize="24" Click="Button_Click_4" FontFamily="Verdana"/>
+        <Button Content="Сотрудники" HorizontalAlignment="Left" Margin="985,455,0,0" VerticalAlignment="Top" Width="215" RenderTransformOrigin="-0.373,-0.062" Height="41" FontSize="24" Click="Button_Click_3" FontFamily="Verdana"/>
+        <Button x:Name="Button_Click_Tab" Content="Таблица" HorizontalAlignment="Left" Margin="982,603,0,0" VerticalAlignment="Top" Width="221" RenderTransformOrigin="-0.347,-0.125" Height="47" FontSize="24" FontFamily="Verdana" Click="Button_Click_6"/>
+        <Label Content="О проекте" HorizontalAlignment="Left" Margin="1,397,0,258" VerticalAlignment="Center" Height="49" Width="549" FontFamily="Verdana" FontSize="36" RenderTransformOrigin="0.123,0.365"/>
+        <Button x:Name="Button_Click_Poisk2" Content="Поиск" HorizontalAlignment="Left" Margin="764,603,0,0" VerticalAlignment="Top" Width="213" RenderTransformOrigin="-3.173,-2.875" Height="47" FontSize="24" FontFamily="Verdana" Click="Button_Click_Poisk2_Click"/>
         <Label Content="Разработчик" HorizontalAlignment="Left" Margin="10,13,0,613" VerticalAlignment="Center" Height="49" Width="283" FontFamily="Verdana" FontSize="36" RenderTransformOrigin="0.123,0.365"/>
 
 
