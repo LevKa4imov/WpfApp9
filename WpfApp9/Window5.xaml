@@ -1,0 +1,35 @@
+﻿<Window x:Class="WpfApp9.Window5"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:WpfApp9"
+        mc:Ignorable="d"
+          Title="Window5" Height="500" Width="960" ResizeMode="NoResize" WindowStyle="None" Background="AliceBlue">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0.1,0" EndPoint="0.9,1">
+
+                <GradientStop Color="White" Offset="1" />
+
+            </LinearGradientBrush>
+        </Grid.Background>
+        <DataGrid x:Name="dataGrid" IsReadOnly="True" CanUserAddRows="False" HorizontalAlignment="Left" Height="316" Margin="97,55,0,0" VerticalAlignment="Top" Width="763" SelectionChanged="dataGrid_SelectionChanged" FontFamily="Verdana" FontSize="24">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding NazvanieProekta}" ClipboardContentBinding="{x:Null}" Header="Название проекта" Width="260"/>
+                <DataGridTextColumn Binding="{Binding cena}" ClipboardContentBinding="{x:Null}" Header="Стоимость" Width="200"/>
+                <DataGridTextColumn Binding="{Binding DateSroki, StringFormat=\{0:dd.MM.yyyy\}}" Header="Сроки" Width="200"/>
+                <DataGridTextColumn Binding="{Binding Familia}" ClipboardContentBinding="{x:Null}" Header="Выполняет заказ" Width="260"/>
+                <DataGridTextColumn Binding="{Binding SpezializaziaSotrud}" ClipboardContentBinding="{x:Null}" Header="Разработчик" Width="350"/>
+                <DataGridTextColumn Binding="{Binding FamiliaZakazchika}" ClipboardContentBinding="{x:Null}" Header="Заказчик" Width="260"/>
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Эспорт" HorizontalAlignment="Center" Margin="0,385,0,0" VerticalAlignment="Top" Width="760" Height="44" FontSize="24" Click="Button_Click" RenderTransformOrigin="0.574,0.953"/>
+        <Button Margin="895,10,9,434" Style="{StaticResource MaterialDesignFloatingActionButton}" Background="{x:Null}"
+            ToolTip="Close" x:Name="btnExit" Click="btnExit_Click" Height="Auto" RenderTransformOrigin="6.893,1.054" Width="Auto">
+            <materialDesign:PackIcon Kind="Close" Foreground="Black" Width="30" Height="30" RenderTransformOrigin="0.967,-0.517" />
+        </Button>
+    </Grid>
+</Window>

@@ -1,0 +1,56 @@
+﻿<Window x:Class="WpfApp9.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp9"
+         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+         Title="АВТОРИЗАЦИЯ" Height="450" Width="800" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize">
+    <Grid>
+
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0.1,0" EndPoint="0.9,1">
+
+                <GradientStop Color="White" Offset="1" />
+                <GradientStop Color="White" Offset="0" />
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Border Height="400" VerticalAlignment="Top" CornerRadius="0 0 160 0" Background="LightBlue">
+            <Image Margin="0,0,305,5" Source="/Programmer-PNG-Free-File-Download.png" Stretch="Fill"/>
+        </Border>
+        <StackPanel Orientation="Horizontal">
+            <StackPanel Width="350"/>
+            <StackPanel Width="350">
+                <StackPanel Margin="20 40">
+                    <TextBlock Text=" " Margin="20" Foreground="White" TextAlignment="Center" FontSize="38" FontFamily="Great Vibes"></TextBlock>
+                    <StackPanel Orientation="Horizontal" Margin="10">
+                        <materialDesign:PackIcon Kind="User" Width="25" Height="25" Foreground="#D94448"/>
+                        <TextBox x:Name="txtUsername" Margin="10 0" materialDesign:HintAssist.Hint="Логин " Foreground="Black" Width="250" BorderBrush="White" CaretBrush="#FFD94448" SelectionBrush="#FFD94448" TextChanged="txtUsername_TextChanged" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="10">
+                        <materialDesign:PackIcon Kind="Lock" Width="25" Height="25" Foreground="#D94448"/>
+                        <PasswordBox x:Name="txtPassword" Margin="10 0" materialDesign:HintAssist.Hint="********" Foreground="Black" Width="250" BorderBrush="White" CaretBrush="#FFD94448" SelectionBrush="#FFD94448" />
+                    </StackPanel>
+                    <Button Height="40" Style="{StaticResource MaterialDesignRaisedButton}" 
+                         materialDesign:ButtonAssist.CornerRadius="10" BorderThickness="2" BorderBrush="#D94448"
+                         Background="#D94448" Foreground="White" ToolTip="Login" x:Name="btnLogin" Click="btnLogin_Click" Content="Регистрация" RenderTransformOrigin="1.153,0.086" Margin="0,0,81,0" HorizontalAlignment="Right" Width="124"/>
+                    <StackPanel Height="21"></StackPanel>
+                    <Button Height="40" Style="{StaticResource MaterialDesignRaisedButton}" 
+                         materialDesign:ButtonAssist.CornerRadius="10" BorderThickness="2" BorderBrush="#D94448"
+                         Background="#D94448" Foreground="White" ToolTip="Register" x:Name="btnRegister" Click="btnRegister_Click" Content="Вход" RenderTransformOrigin="1.153,0.086" Margin="0,0,81,0" HorizontalAlignment="Right" Width="124"/>
+                </StackPanel>
+
+            </StackPanel>
+            <StackPanel Width="100">
+                <Button Margin="0,20,22,20" Style="{StaticResource MaterialDesignFloatingActionButton}" Background="{x:Null}"
+                 ToolTip="Close" x:Name="btnExit" Click="btnExit_Click" Height="81" Width="Auto">
+                    <Button Style="{StaticResource MaterialDesignFloatingActionButton}" Background="{x:Null}"
+                        ToolTip="Close" x:Name="btnExit_Copy" Click="btnExit_Click" Height="80" RenderTransformOrigin="6.893,1.054" Width="80">
+                        <materialDesign:PackIcon Kind="Close" Foreground="Black" Width="30" Height="30" />
+                    </Button>
+                </Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
